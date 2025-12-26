@@ -9,7 +9,7 @@ export const siteConfig = {
       ? "http://localhost:3000"
       : "https://quadtechconsulting.com"),
   email: "contact@quadtechconsulting.com",
-  phone: process.env.NEXT_PUBLIC_PHONE ?? "",
+  phone: process.env.NEXT_PUBLIC_PHONE ?? "(207) 751-5564",
   addressLine1: process.env.NEXT_PUBLIC_ADDRESS_LINE1 ?? "",
   addressLine2: process.env.NEXT_PUBLIC_ADDRESS_LINE2 ?? "",
   facebookUrl: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? "",

@@ -28,7 +28,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-16 pb-8 sm:pt-20 sm:pb-10 md:pt-24 lg:pt-28 md:pb-12 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100/50"
+      className="relative pt-20 pb-8 sm:pt-24 sm:pb-10 lg:pt-28 md:pb-12 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100/50"
       aria-label="Welcome to QuadTech Consulting"
     >
       <div
@@ -51,10 +51,12 @@ export default function Hero() {
             <motion.div
               custom={0}
               variants={fadeInUp}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#0f172a] text-white rounded-full text-sm font-medium mb-5"
+              className="inline-flex items-center gap-2 px-3 py-2 bg-[#0f172a] text-white rounded-full text-xs font-medium mb-5 max-w-[calc(100vw-2rem)] overflow-hidden"
             >
               <span className="w-2 h-2 bg-[#0d9488] rounded-full animate-pulse" />
-              Trusted IT Partner for Growing Businesses
+              <span className="whitespace-nowrap overflow-hidden text-ellipsis">
+                Trusted IT Partner for Growing Businesses
+              </span>
             </motion.div>
 
             <motion.h1

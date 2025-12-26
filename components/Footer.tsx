@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
@@ -260,11 +260,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-slate-400 text-sm">
               {siteConfig.phone && (
-                <li className="hover:text-white transition-colors">
+                <li>
                   <Link
                     href={`tel:${siteConfig.phone}`}
-                    className="text-slate-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#14b8a6] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a1120]"
+                    className="inline-flex items-center gap-2 text-slate-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#14b8a6] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a1120]"
                   >
+                    <Phone className="h-4 w-4" aria-hidden="true" />
                     {siteConfig.phone}
                   </Link>
                 </li>
